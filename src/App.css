@@ -1,31 +1,125 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+.mv-small-text {
+  color: #F7F9FF;
+  font: 400 14px "Palanquin", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mv-small-text-out {
+  color: #A3A5B2;
+  font: 600 12px "Montserrat", sans-serif;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mv-extra-small-text-out {
+  color: #598EF7;
+  font: 600 12px "Palanquin", sans-serif;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mv-big-title {
+  color: #F7F9FF;
+  font: 900 32px "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.mv-text {
+  color: #CFD1DE;
+  font: 400 16px "Palanquin", sans-serif;
+}
+
+.mv-text-highlight {
+  color: #598EF7;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.mv-small-title {
+  font: 900 16px "Montserrat", sans-serif;
+  color: #F7F9FF;
+}
+
+.ant-btn-background-ghost.ant-btn-primary {
+  color: #598EF7;
+  border-color: #598EF7;
+  text-shadow: none;
+}
+
+.ant-btn {
+  border-radius: 50px;
+  font: 400 16px "Palanquin", sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.ant-btn span:last-child {
+  margin-bottom: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-btn.ant-btn-background-ghost:focus,
+.ant-btn.ant-btn-background-ghost:hover {
+  color: #598EF7;
+  border-color: #598EF7;
+  opacity: 0.8;
+  background-color: rgba(63, 70, 96, 0.2);
+}
+
+.ant-btn-link {
+  color: #598EF7;
+  opacity: 1;
+}
+.ant-btn-link:hover {
+  color: #598EF7;
+  opacity: 0.8;
+}
+
+.mv-loading-screen {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  background: #2E303A;
+}
+.mv-loading-screen img {
+  width: 160px;
+  height: auto;
+}
+
+.mv-spin {
+  -webkit-animation: App-logo-spin infinite 5s linear;
+          animation: App-logo-spin infinite 5s linear;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 @keyframes App-logo-spin {
@@ -33,6 +127,125 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
+.ant-input-affix-wrapper {
+  border-radius: 50px;
+  color: rgba(207, 209, 222, 0.2);
+  background-color: rgba(63, 70, 96, 0.4);
+  border: 1px solid rgba(207, 209, 222, 0.4);
+  padding: 4px 16px;
+}
+.ant-input-affix-wrapper input {
+  background: transparent;
+  caret-color: #F7F9FF;
+  color: #F7F9FF;
+  font: 400 14px "Palanquin", sans-serif;
+}
+.ant-input-affix-wrapper input::-moz-placeholder {
+  color: rgba(207, 209, 222, 0.4);
+}
+.ant-input-affix-wrapper input:-ms-input-placeholder {
+  color: rgba(207, 209, 222, 0.4);
+}
+.ant-input-affix-wrapper input::placeholder {
+  color: rgba(207, 209, 222, 0.4);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent;
+  -webkit-text-fill-color: #F7F9FF;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.ant-input-prefix {
+  margin-right: 8px;
+}
+
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper,
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover {
+  background: rgba(63, 70, 96, 0.4);
+  border-color: #ff4d4f;
+}
+
+.ant-progress-text {
+  color: #F7F9FF;
+  font: 400 14px "Palanquin", sans-serif;
+}
+
+.ant-progress-inner {
+  background-color: #F7F9FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* background-color: #171720; */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#canvas-container {
+  height: 100%;
+  width: 100%;
+  background: #2E303A;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid rgba(207, 209, 222, 0.4);
+  background: rgba(46, 48, 58, 0.6);
+  display: flex;
+  align-items: center;
+  color: #F7F9FF;
+  height: 60px;
+  padding: 0px 32px;
+  z-index: 2;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.mv-current-track {
+  position: absolute;
+  bottom: 32px;
+  border: 1px solid rgba(207, 209, 222, 0.4);
+  background: rgba(46, 48, 58, 0.6);
+  color: #F7F9FF;
+  height: 61px;
+  padding: 8px;
+  z-index: 2;
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}/*# sourceMappingURL=App.css.map */
