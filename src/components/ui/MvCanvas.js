@@ -38,7 +38,7 @@ function MvCanvas({ value }) {
           enableDamping
           dampingFactor={0.2}
           autoRotate={false}
-          rotateSpeed={-0.5}
+          rotateSpeed={-0.2}
         />
         <MvScene url={url} />
       </PlayerContext.Provider>

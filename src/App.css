@@ -58,6 +58,10 @@ h6 {
   color: #F7F9FF;
 }
 
+.mv-danger {
+  color: #ff4d4f;
+}
+
 .ant-btn-background-ghost.ant-btn-primary {
   color: #598EF7;
   border-color: #598EF7;
@@ -187,6 +191,26 @@ select:-webkit-autofill:focus {
   background-color: #F7F9FF;
 }
 
+.mv-vote-modal {
+  width: 400px;
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(46, 48, 58, 0.8);
+  border: 1px solid rgba(207, 209, 222, 0.4);
+  border-radius: 10px;
+}
+.mv-vote-modal .mv-modal-header {
+  height: 60px;
+  border-bottom: 1px solid rgba(207, 209, 222, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #F7F9FF;
+  background: transparent;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -221,7 +245,6 @@ body,
   top: 10px;
   left: 10px;
   border: 1px solid rgba(207, 209, 222, 0.4);
-  background: rgba(46, 48, 58, 0.6);
   display: flex;
   align-items: center;
   color: #F7F9FF;
@@ -231,6 +254,7 @@ body,
   border-radius: 10px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background: rgba(46, 48, 58, 0.6);
 }
 
 .mv-current-track {

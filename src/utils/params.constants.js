@@ -11,11 +11,11 @@ export const objectParams = [
       rotation: [0, 3.15, 0],
     },
     voteIcon: {
-      position: [3.8, 2, -9.5],
+      position: [2.6, 3.9, -9.5],
       rotation: [0, 0, 0],
     },
     heartIcon: {
-      position: [2.6, 3.9, -9.5],
+      position: [1.4, 3.6, -9.5],
       rotation: [0, 0, 0],
     },
     song: {
@@ -35,11 +35,11 @@ export const objectParams = [
       rotation: [0, -1.55, 0],
     },
     voteIcon: {
-      position: [-9.5, 2, -3.8],
+      position: [-9.5, 3.9, -2.6],
       rotation: [0, 1.5, 0],
     },
     heartIcon: {
-      position: [-9.5, 3.9, -2.6],
+      position: [-9.5, 3.6, -1.4],
       rotation: [0, 1.55, 0],
     },
 
@@ -60,11 +60,11 @@ export const objectParams = [
       rotation: [0, 0, 0],
     },
     voteIcon: {
-      position: [-4, 2, 9.5],
+      position: [-2.6, 3.9, 9.5],
       rotation: [0, 0, 0],
     },
     heartIcon: {
-      position: [-2.6, 3.9, 9.5],
+      position: [-1.4, 3.6, 9.5],
       rotation: [0, 3.125, 0],
     },
 
@@ -85,11 +85,11 @@ export const objectParams = [
       rotation: [0, 1.55, 0],
     },
     voteIcon: {
-      position: [9.5, 2, 3.8],
+      position: [9.5, 3.9, 2.6],
       rotation: [0, 1.5, 0],
     },
     heartIcon: {
-      position: [9.5, 3.9, 2.6],
+      position: [9.5, 3.6, 1.4],
       rotation: [0, -1.55, 0],
     },
 

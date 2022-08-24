@@ -29,6 +29,7 @@ function App() {
           isplaying: false,
           maxDistance: 32,
           minDistance: -32,
+          voted: "",
         });
       })
       .catch((err) => console.log(err));

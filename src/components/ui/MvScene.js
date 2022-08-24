@@ -55,6 +55,10 @@ function MvScene({ url }) {
             }}
             rotateObj={rotateObj}
             scale={3}
+            heartPos={objectParams[i].heartIcon.position}
+            heartRot={objectParams[i].heartIcon.rotation}
+            votePos={objectParams[i].voteIcon.position}
+            voteRot={objectParams[i].voteIcon.rotation}
             circlePos={objectParams[i].coverArt.circlePosition}
             position={objectParams[i].coverArt.position}
             rotation={objectParams[i].coverArt.rotation}
