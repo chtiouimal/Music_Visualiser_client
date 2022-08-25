@@ -1,4 +1,4 @@
-import { Html, useTexture } from "@react-three/drei";
+import { useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, {
   Suspense,
@@ -15,6 +15,7 @@ import MvVoteIcon from "./MvVoteIcon";
 function MvModel({
   url,
   data,
+  collection,
   circlePos,
   rotateObj,
   heartPos,
@@ -23,7 +24,7 @@ function MvModel({
   voteRot,
   ...props
 }) {
-  const { dataContext, setDataContext } = useContext(PlayerContext);
+  const { dataContext } = useContext(PlayerContext);
   const [scale, setScale] = useState(0.19);
   const [voted, setVoted] = useState(false);
   const [visible, setVisible] = useState(false);
@@ -78,7 +79,13 @@ function MvModel({
           onPointerOut={() => setScale(0.19)}
         />
       )}
-      {visible && <MvVoteModal setVisible={setVisible} track={data._id} />}
+      {visible && (
+        <MvVoteModal
+          setVisible={setVisible}
+          track={data._id}
+          collection={collection}
+        />
+      )}
       {voted && (
         <MvHeart
           scale={scale - 0.1}

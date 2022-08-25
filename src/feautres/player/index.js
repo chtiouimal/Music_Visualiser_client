@@ -1,16 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { PlayerContext } from "../../context/PlayerContext";
 
-function MusicPlayer(
-  {
-    // currentMusic,
-    // isplaying,
-    // setIsplaying,
-    // music,
-    // setMusic,
-    // setCurrentmusic,
-  },
-) {
+function MusicPlayer() {
   const { dataContext, setDataContext } = useContext(PlayerContext);
 
   const [mp3url, setMp3url] = useState("");

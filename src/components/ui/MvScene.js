@@ -5,7 +5,6 @@ import MvModel from "./MvModel";
 import { getSelectedCollections } from "../../services/collection";
 import { cameraPosition, objectParams } from "../../utils/params.constants";
 import { PlayerContext } from "../../context/PlayerContext";
-import { TextureLoader } from "three";
 
 function MvScene({ url }) {
   const texture = useLoader(THREE.TextureLoader, url);
@@ -40,6 +39,7 @@ function MvScene({ url }) {
           <MvModel
             key={e._id}
             url={e.coverArt}
+            collection={data._id}
             data={e}
             onDoubleClick={() => {
               setDataContext({

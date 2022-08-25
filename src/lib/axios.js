@@ -8,6 +8,6 @@ export const getRequest = (url) => {
   return axios.get(url);
 };
 
-export const updateRequest = (url) => {
-  return axios.put(url);
+export const updateRequest = (url, data) => {
+  return axios.put(url, data);
 };
